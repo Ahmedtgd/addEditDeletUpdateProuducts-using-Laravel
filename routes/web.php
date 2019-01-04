@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Product;
+use App\Product; 
 Route::get('/', function () {
     return view('welcome');
 });
@@ -31,4 +31,3 @@ return redirect("product");
 });
 Route::get('edit/{id}',"ProductController@EditProduct");
 Route::post('edit/{id}',"ProductController@EditProduct");
-

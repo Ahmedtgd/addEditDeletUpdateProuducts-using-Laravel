@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+public function __construct()
+{
+    $this->middleware('auth');
+}
+
+
+
 public function VeiwProduct(){ //routes/web.php ln 24 +app/product.php ln 9
                               $product=Product::all();
                                $arr=Array('product'=>$product);
@@ -26,6 +33,7 @@ public function AddProduct(Request $request){
         }
 
                return view('product.add');
+              
 
 }
 public function EditProduct(Request $request,$id){

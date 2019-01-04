@@ -7,11 +7,11 @@
 <body>
 <form action="/edit/{{$product->id}}" method="POST">
 {{ csrf_field() }}
-Prouduct name: <input type="text" name="name" value="{{$product->name}}" placeholder="enter the product name" />
+<h4>Prouduct name:</h4> <input type="text" name="name" value="{{$product->name}}" class="form-control" placeholder="enter the product name" />
 </br>
-Prouduct price: <input type="text" name="price"value="{{$product->price}}" placeholder="enter the product price" />
+<h4>Prouduct price:</h4> <input type="text" name="price"value="{{$product->price}}" class="form-control" placeholder="enter the product price" />
 </br>
-<input type="submit" value="Add product">
+<input class="btn btn-primary"  type="submit" value="Confirm changes">
 </form>
 </body>
 </html>

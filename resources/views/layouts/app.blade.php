@@ -28,9 +28,10 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                  <!--  <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
+                  -->
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -74,7 +75,7 @@
         </nav>
 
 
-  <h5>  </h5><a href="/product"> Product</a> <h5>    </h5><a href="/add">add</a>
+
         @yield('content')
     </div>
 

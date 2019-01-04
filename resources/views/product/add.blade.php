@@ -27,7 +27,9 @@ Prouduct price: <input type="text" name="price" value="{{Request::old('price')}}
 </div>
 </br>
 <input  class="btn btn-primary" type="submit" value="Add product">
+<a  class="btn btn-primary" href="/product"> Returne to  Product list  </a>
 </form>
+
 </body>
 </html>
 @endsection
